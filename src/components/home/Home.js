@@ -59,8 +59,8 @@ class Home extends Component {
   renderButton() {
     if (!this.state.showLoading) {
       return (
-        <button
-          className="btn waves-effect waves-light submit-btn"
+      <button
+          className="btn btn-secondary btn-sm"
           name="action"
           onClick={this.handleSubmit}
         >
@@ -90,17 +90,19 @@ class Home extends Component {
   render() {
     return (
       <div className="landing">
-        <div>
+      <form>
+        <div className="heading">
           <h5> Original Url</h5>
         </div>
         <div>
-          Ex:{" "}
+          Example: {" "}
           <a target="_blank" href={this.state.exUrl}>
             {this.state.exUrl}
           </a>
         </div>
         <input
           name="originalUrl"
+          className="form-control"
           field="originalUrl"
           placeholder="Paste your link.."
           value={this.state.originalUrl}
@@ -118,6 +120,7 @@ class Home extends Component {
         <input
           field="baseUrl"
           name="baseUrl"
+          className="form-control"
           placeholder={this.state.exShortUrl}
           value={this.state.baseUrl}
           onChange={this.handleUserInput.bind(this)}
@@ -142,6 +145,7 @@ class Home extends Component {
           </a>{" "}
           .This will change based on domain name]
         </div>
+        </form>
       </div>
     );
   }

@@ -1,5 +1,6 @@
 .container {
-  width: 90%;
+  max-width: 900px;
+  margin: auto;
 }
 .z-depth-0 {
   -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
@@ -13,4 +14,8 @@
   width: 100%;
   color: black;
   text-align: center;
+}
+.body {
+  max-width: 500px;
+  margin: auto;
 }

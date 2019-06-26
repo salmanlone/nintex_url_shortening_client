@@ -11,7 +11,7 @@ class Header extends Component {
             className="left brand-logo"
             style={{ left: "0px", color: "black" }}
           >
-            Custom URL Shortener
+            <h1>Custom URL Shortener</h1>
           </Link>
         </div>
       </nav>
